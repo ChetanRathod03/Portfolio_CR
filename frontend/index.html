@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chetan Rathod — Java / Cloud / DevOps Engineer</title>
+<meta name="description" content="Chetan Rathod — Java Backend & Cloud Engineer building scalable, production-grade systems with Spring Boot, AWS and Docker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="preloader">
+  <div class="boot-line" id="bootLine">&gt; initializing<b>_</b></div>
+  <div class="boot-bar"><i></i></div>
+</div>
+
+<canvas id="bgCanvas"></canvas>
+
+<header id="siteHeader">
+  <nav>
+    <a href="#hero" class="logo">CR<span class="blink">_</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Connect Me</a>
+    <button class="burger" id="burgerBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#stack">Stack</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="status-pill"><span class="status-dot"></span> Open to Java / Backend / Cloud roles</div>
+      <h1>Hi, I'm <span class="name">Chetan Rathod</span></h1>
+      <div class="terminal-role"><span class="prompt">$</span> whoami &rarr; <span id="typedRole">Java Backend Engineer</span><span class="cursor-caret"></span></div>
+      <p class="desc">I build scalable, production-grade backend systems with Spring Boot, and ship them with Docker &amp; AWS. Currently finishing my B.Tech in IT while shipping full-stack projects that actually handle real transactions, real auth, and real load.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" id="downloadResumeBtn">&#8595; Explore more</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Connect Me</a>
+      </div>
+    </div>
+    <div class="hero-panel reveal">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <div class="line">{</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"name"</span>: <span class="str">"Chetan Rathod"</span>,</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"role"</span>: <span class="str">"Java / Spring Boot Developer"</span>,</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"stack"</span>: [<span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>, <span class="str">"React"</span>, <span class="str">"AWS"</span>, <span class="str">"Docker"</span>],</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"cgpa"</span>: <span class="num">8.65</span>,</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"currently"</span>: <span class="str">"Remote Intern @ Zaalima Development"</span>,</div>
+      <div class="line">&nbsp;&nbsp;<span class="key">"status"</span>: <span class="str">"open_to_work"</span></div>
+      <div class="line">}</div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow reveal">About</div>
+    <h2 class="section-title reveal">Backend-first, <span>full-stack when it counts</span></h2>
+    <div class="about-grid">
+      <div class="card reveal">
+        <div class="icon">&#9881;&#65039;</div>
+        <h3>Summary</h3>
+        <p>Highly motivated Java developer skilled in building scalable full-stack applications using Spring Boot &amp; React. Experienced in designing REST APIs, with a quick-learning, problem-solving mindset.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">&#127919;</div>
+        <h3>Career Objective</h3>
+        <p>To grow into a backend/cloud engineering role where I can design resilient, high-throughput systems &mdash; and keep learning the operational side: containers, orchestration, and observability.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon">&#9889;</div>
+        <h3>What Makes Me Different</h3>
+        <p>I don't stop at "it works." VaultCore's ledger is ACID-compliant with 99.9% transaction consistency &mdash; I care about correctness under concurrency, not just a green checkmark.</p>
+      </div>
+      <div class="card reveal about-wide">
+        <div class="icon">&#128218;</div>
+        <h3>Technical Interests</h3>
+        <p>Distributed systems &amp; concurrency (Java 21 virtual threads), event-driven architecture with Kafka, auth &amp; identity (Keycloak/OAuth2/JWT), and cloud-native deployment on AWS with Docker.</p>
+      </div>
+    </div>
+
+    <div class="edu-timeline reveal">
+      <div class="dot"></div>
+      <div class="meta">NOV 2022 &mdash; JUN 2026</div>
+      <h3>Bachelor of Technology, Information Technology</h3>
+      <p>J D College of Engineering and Management, Nagpur &middot; CGPA 8.65</p>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack">
+  <div class="wrap">
+    <div class="eyebrow reveal">Tech Stack</div>
+    <h2 class="section-title reveal">Tools I reach for <span>every day</span></h2>
+    <div class="tabs reveal" id="tabRow">
+      <button class="tab active" data-cat="all">All</button>
+      <button class="tab" data-cat="lang">Programming</button>
+      <button class="tab" data-cat="front">Frontend</button>
+      <button class="tab" data-cat="back">Backend</button>
+      <button class="tab" data-cat="db">Database</button>
+      <button class="tab" data-cat="cloud">Cloud &amp; DevOps</button>
+      <button class="tab" data-cat="tools">Tools</button>
+    </div>
+    <div class="skill-grid reveal" id="skillGrid"></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="eyebrow reveal">Experience</div>
+    <h2 class="section-title reveal">Where I've been <span>shipping code</span></h2>
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-date">DEC 2025 &mdash; MAR 2026</div>
+        <div>
+          <h3>Zaalima Development Pvt. Ltd.</h3>
+          <div class="role">Remote Intern &middot; Full Stack Development</div>
+          <ul>
+            <li>Developed and maintained full-stack web applications using Java, Spring Boot, REST APIs, HTML, CSS, JavaScript and SQL.</li>
+            <li>Built and consumed RESTful APIs for frontend-backend integration, implementing backend business logic, authentication, and database integration.</li>
+            <li>Debugged and optimized UI for faster load times and a better user experience.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow reveal">Projects</div>
+    <h2 class="section-title reveal">Things I've <span>actually built</span></h2>
+    <div class="filters reveal" id="filterRow">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="fintech">FinTech</button>
+      <button class="tab" data-filter="ai">AI</button>
+    </div>
+    <div class="proj-grid reveal" id="projGrid">
+      <div class="proj-card" data-filter="fintech">
+        <div class="proj-visual">VaultCore // ledger-service</div>
+        <div class="proj-body">
+          <h3>VaultCore Financial</h3>
+          <div class="proj-tags">
+            <span>React.js</span><span>Spring Boot 3.3</span><span>Spring Security 6</span><span>Keycloak</span><span>PostgreSQL</span><span>Redis</span><span>Kafka</span><span>JWT</span>
+          </div>
+          <p><b style="color:var(--text-0)">Problem:</b> Secure banking &amp; stock trading needed an ACID-compliant ledger that stays fast under concurrent load.<br><b style="color:var(--text-0)">What I built:</b> A FinTech microservices platform with an ACID-compliant ledger, using Java 21 Virtual Threads for concurrency, and Keycloak OAuth2/JWT auth with fraud-detection checks.</p>
+          <div class="proj-stats">
+            <div><b>99.9%</b>txn consistency</div>
+            <div><b>+80%</b>concurrent throughput</div>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">&#128279; GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card" data-filter="ai">
+        <div class="proj-visual">resume-ai // job-matcher</div>
+        <div class="proj-body">
+          <h3>AI-Powered Resume Builder &amp; Job Matcher</h3>
+          <div class="proj-tags">
+            <span>React.js</span><span>Spring Boot</span><span>Spring Security</span><span>MongoDB</span><span>OpenAI API</span><span>JWT</span>
+          </div>
+          <p><b style="color:var(--text-0)">Problem:</b> Students needed faster, smarter resume creation and more accurate job matching.<br><b style="color:var(--text-0)">What I built:</b> A full-stack platform combining resume creation with AI-based optimization and OpenAI-powered job matching, secured with JWT/OAuth2.</p>
+          <div class="proj-stats">
+            <div><b>88%</b>match accuracy</div>
+            <div><b>-70%</b>resume creation time</div>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/" target="_blank" rel="noopener">&#128279; GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card soon" data-filter="all">
+        <div>
+          <div style="font-size:26px; margin-bottom:10px;">&#128736;&#65039;</div>
+          <h3 style="margin-bottom:8px; color:var(--text-0);">More in progress</h3>
+          <p style="font-size:13px;">New backend &amp; cloud-deployment projects are on the way &mdash; check GitHub for the latest.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="eyebrow reveal">Achievements</div>
+    <h2 class="section-title reveal">Recognition <span>along the way</span></h2>
+    <div class="ach-grid">
+      <div class="ach-card reveal">
+        <div class="badge">&#127942;</div>
+        <div><h3>Top 20 / 2000+, TopBrains Hackathon</h3><p>Ranked among the top 20 out of 2000+ students across Maharashtra.</p></div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="badge">&#129351;</div>
+        <div><h3>Project Winner &mdash; Symbiosis &amp; Capgemini</h3><p>Winner of the Java Full Stack Development Program.</p></div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="badge">&#129309;</div>
+        <div><h3>Peer Support Honoree</h3><p>Recognized for consistently guiding and assisting fellow participants throughout the program.</p></div>
+      </div>
+      <div class="ach-card reveal">
+        <div class="badge">&#127941;</div>
+        <div><h3>Medal &amp; Conquer Trophy</h3><p>Awarded for exceptional performance and teamwork during the project phase.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CODING PROFILES -->
+<section id="profiles">
+  <div class="wrap">
+    <div class="eyebrow reveal">Coding Profiles</div>
+    <h2 class="section-title reveal">Find me <span>elsewhere</span></h2>
+    <div class="profile-grid">
+      <a class="profile-card reveal" href="https://github.com/" target="_blank" rel="noopener"><div class="icon">&#128187;</div><h4>GitHub</h4><span>@chetanrathod</span></a>
+      <a class="profile-card reveal" href="https://linkedin.com/" target="_blank" rel="noopener"><div class="icon">&#128188;</div><h4>LinkedIn</h4><span>Chetan Rathod</span></a>
+      <a class="profile-card reveal" href="#" target="_blank" rel="noopener"><div class="icon">&#129504;</div><h4>LeetCode</h4><span>Profile link coming soon</span></a>
+      <a class="profile-card reveal" href="#" target="_blank" rel="noopener"><div class="icon">&#128214;</div><h4>GeeksforGeeks</h4><span>Profile link coming soon</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow reveal">Contact</div>
+    <h2 class="section-title reveal">Let's <span>talk</span></h2>
+    <div class="contact-grid">
+      <form class="form-panel reveal" id="contactForm" novalidate>
+        <div class="field"><label>Full name</label><input type="text" id="f-name" placeholder="Your name" required></div>
+        <div class="form-row">
+          <div class="field"><label>Email</label><input type="email" id="f-email" placeholder="you@company.com" required></div>
+          <div class="field"><label>Company</label><input type="text" id="f-company" placeholder="Company name"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label>Designation</label><input type="text" id="f-designation" placeholder="e.g. Engineering Manager"></div>
+          <div class="field"><label>Phone (optional)</label><input type="tel" id="f-phone" placeholder="+91"></div>
+        </div>
+        <div class="field"><label>Subject</label><input type="text" id="f-subject" placeholder="What's this about?"></div>
+        <div class="field"><label>Message</label><textarea id="f-message" placeholder="Tell me more..." required></textarea></div>
+        <div class="checks">
+          <label class="check"><input type="checkbox" id="f-resume"> Request my resume</label>
+          <label class="check"><input type="checkbox" id="f-interview"> Schedule an interview</label>
+        </div>
+        <div class="field"><label>Priority</label>
+          <select id="f-priority"><option value="NORMAL">Normal</option><option value="HIGH">High</option><option value="URGENT">Urgent</option></select>
+        </div>
+        <!-- Honeypot: hidden from real users, bots that auto-fill every field will trip it -->
+        <div style="position:absolute; left:-9999px; opacity:0; height:0; overflow:hidden;" aria-hidden="true">
+          <label>Website</label><input type="text" id="f-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn" id="sendMsgBtn">Send Message &#8594;</button>
+        <p id="formStatus" style="font-family:var(--mono); font-size:11.5px; color:var(--text-2); margin-top:12px; min-height:16px;"></p>
+      </form>
+      <div class="contact-side">
+        <div class="contact-line reveal"><div class="icon">&#9993;&#65039;</div><div><b>Email</b><span>chetanrathod71252@gmail.com</span></div></div>
+        <div class="contact-line reveal"><div class="icon">&#128222;</div><div><b>Phone</b><span>+91 7498298775</span></div></div>
+        <div class="contact-line reveal"><div class="icon">&#128205;</div><div><b>Location</b><span>Nagpur, Maharashtra, India</span></div></div>
+        <div class="reveal">
+          <p style="font-family:var(--mono); font-size:11.5px; color:var(--text-2); margin-bottom:10px;">FIND ME ON</p>
+          <div class="socials">
+            <a class="social-btn" href="https://linkedin.com/" target="_blank" rel="noopener">in</a>
+            <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener">&#128187;</a>
+            <a class="social-btn" href="mailto:chetanrathod71252@gmail.com">&#9993;&#65039;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Chetan Rathod &middot; Built with React-style components, shipped as one file &middot; <span style="color:var(--cyan);">status: open_to_work</span></p>
+</footer>
+
+<button class="back-to-top" id="backToTop">&#8593;</button>
+<script>window.PORTFOLIO_API_BASE = 'http://localhost:8080/api';</script>
+<script src="script.js" defer></script>
+</body>
+</html>
