@@ -21,4 +21,4 @@ jobs:
           aws-region: eu-north-1
 
       - name: Deploy Static Site to S3
-        run: aws s3 sync . s3://cr-portfolio --delete
+        run: aws s3 sync ./frontend s3://cr-portfolio --delete
